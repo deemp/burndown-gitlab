@@ -1,6 +1,7 @@
 # burndown-chart-gitlab
 python script that generates a burndown-chart of a gitlab project
 ![amount of tasks/ time](chart.png)
+amount of tasks / time
 
 # How to setup
 clone the repository 
@@ -18,3 +19,5 @@ in config.json file fill in:
     "project_path": "path_to_repository",
 }
 ```
+
+run `python main.py`
