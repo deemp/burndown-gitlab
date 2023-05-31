@@ -1,6 +1,7 @@
 # burndown-chart-gitlab
 python script that generates a burndown-chart of a gitlab project
 ![amount of tasks/ time](chart.png)
+
 amount of tasks / time
 
 # How to setup
@@ -20,4 +21,7 @@ in config.json file fill in:
 }
 ```
 
-run `python main.py`
+run 
+```sh
+python main.py
+```
