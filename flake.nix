@@ -17,7 +17,7 @@
           inherit (inputs.drv-tools.lib.${system}) getExe mkShellApps;
           inherit (inputs.devshell.lib.${system}) mkShell mkCommands mkRunCommands;
           packages = mkShellApps {
-            main = {
+            default = {
               runtimeInputs = [ pkgs.python3 ];
               text = ''
                 export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [
