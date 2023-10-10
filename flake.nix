@@ -23,7 +23,7 @@
                 export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [
                   pkgs.stdenv.cc.cc.lib
                 ]}
-                poetry run python main.py
+                poetry run python main.py --fetch
               '';
               description = ''run main'';
             };

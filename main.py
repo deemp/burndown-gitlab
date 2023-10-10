@@ -1,101 +1,181 @@
-import json
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
+from collections import defaultdict
+from dataclasses import dataclass
+from dataclasses_json import Undefined, dataclass_json
 from datetime import datetime
-
+from dateutil import parser
+from marshmallow import fields
+from typing import Optional
+from urllib.parse import urlencode
+import argparse
+import dataclasses_json
+import json
+import matplotlib.dates as mdates
+import matplotlib.pyplot as plt
+import pandas as pd
 import requests
+import plotly.graph_objects as go
 
-CONFIG_PATH = 'config.json'
+dataclasses_json.cfg.global_config.encoders[datetime] = datetime.isoformat
+dataclasses_json.cfg.global_config.decoders[datetime] = parser.isoparse
+dataclasses_json.cfg.global_config.mm_fields[datetime] = fields.DateTime(format="iso")
 
-class GitLab:
-    weights = ('0', '1', '2', '3', '5', '8', '13', '21', '34', '55', '89')
-    def __init__(self, config_path=CONFIG_PATH) -> None:
-        with open(config_path) as f: self.config = json.load(f)
-        self.link = f'{self.config["link"]}/api/v4'
-        self.access_token_link = f'?access_token={self.config["access_token"]}'
-        if not self.config.get('project_id'):
-            self.get_project_id()
-            with open(config_path, 'w') as f: json.dump(self.config, f, indent=4)
 
-    def get_project_id(self):
-        link = f'{self.link}/projects{self.access_token_link}&search_namespaces=true&search={self.config["project_path"]}'
-        res = requests.get(link)
-        self.config['project_id'] = res.json()[0].get('id')
+@dataclass_json(undefined=Undefined.EXCLUDE)
+@dataclass
+class Config:
+    host: str
+    project_id: int
 
-    def get_issues_from_open_milestones(self):
-        link = f'{self.link}/projects/{self.config["project_id"]}/issues{self.access_token_link}&milestone_id=Started'
-        res = requests.get(link)
-        return res.json()
 
-    def calculate_weights(self, issues, from_label=True):
-        open = 0
-        total = 0
-        closed = []
-        start = datetime.strptime(
-                        issues[0]['milestone']['start_date'],
-                        '%Y-%m-%d'
-                    )
-        end = datetime.strptime(
-                    issues[0]['milestone']['due_date'],
-                    '%Y-%m-%d'
-                )
+@dataclass_json(undefined=Undefined.EXCLUDE)
+@dataclass
+class Issue:
+    iid: int
+    created_at: datetime
+    closed_at: datetime | str | type(None) = None
 
-        for issue in issues:
-            if from_label:
-                weight = 0
-                for label in issue['labels']:
-                    if label not in self.weights:
-                        continue
 
-                    weight = int(label)
-                    break
+def get_issues(config: Config, params):
+    results = []
+    for i in range(1, 101):
+        # https://docs.gitlab.com/ee/api/rest/index.html#offset-based-pagination
+        page_params = {"page": i, "per_page": 100}
+        page_params.update(params)
+        # https://docs.gitlab.com/ee/api/issues.html#list-issues
+        url = f"{config.host}/api/v4/projects/{config.project_id}/issues?{urlencode(page_params)}"
+        response = requests.get(url).json()
+        if len(response) == 0:
+            break
+        results.append(response)
+    return [issue for result in results for issue in result]
 
-            else: # from title
-                weight = int(issue['title'].split('-')[0])
-
-            total += weight
-
-            if issue['state'] == 'opened':
-                open += weight
-
-            elif issue['state'] == 'closed':
-                closed.append(
-                    (
-                        datetime.strptime(
-                            issue['closed_at'].split('T')[0],
-                            '%Y-%m-%d'
-                        ),
-                        weight
-                    )
-                )
-
-        closed.sort(key=lambda x: x[0])
-        dates= []
-        weights = []
-        current = total
-        for date, weight in closed:
-            dates.append(date)
-            weights.append(current := current - weight)
-
-        weights.insert(0, total)
-        dates.insert(0, start)
-        return (start, end, (total, open, (dates, weights)))
 
 def create_burndown_chart(start, end, weights):
     fig = plt.figure()
-    ax = fig.add_subplot(1,1,1)
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%d/%m'))
+    ax = fig.add_subplot(1, 1, 1)
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%d/%m"))
     ax.axis((start, end, 0, weights[0]))
-    plt.setp(ax.get_xticklabels(), rotation = 15)
+    plt.setp(ax.get_xticklabels(), rotation=15)
     ax.plot((start, end), (weights[0], 0))
-    ax.plot(*weights[2], marker='o')
-    plt.savefig('output.png')
+    ax.plot(*weights[2], marker="o")
+    plt.savefig("output.png")
+
+
+def get_burndown_coords(issues: list[Issue], html: str):
+    df_created = pd.to_datetime(
+        pd.DataFrame(
+            {
+                "issues": [issue.created_at for issue in issues]
+                + [issue.closed_at for issue in issues if issue.closed_at != None]
+            }
+        )["issues"]
+    )
+    created_at_min = df_created.min().date()
+    created_at_max = df_created.max().date()
+
+    df_issues = pd.DataFrame(index=pd.date_range(created_at_min, created_at_max))
+
+    df_issues["created_count"] = 0
+    df_issues["closed_count"] = 0
+    for issue in issues:
+        if issue.closed_at != None:
+            df_issues.at[
+                pd.Timestamp(pd.Timestamp(issue.closed_at).date()), "closed_count"
+            ] += 1
+        df_issues.at[
+            pd.Timestamp(pd.Timestamp(issue.created_at).date()), "created_count"
+        ] += 1
+
+    df_issues["created_count"] = df_issues["created_count"].cumsum()
+    df_issues["closed_count"] = df_issues["closed_count"].cumsum()
+
+    df_issues["remaining_count"] = (
+        df_issues["created_count"] - df_issues["closed_count"]
+    )
+
+    fig = go.Figure()
+    fig.add_trace(
+        go.Scatter(
+            x=df_issues.index,
+            y=df_issues["remaining_count"],
+            line_shape="spline",
+            name="Remaining",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=df_issues.index,
+            y=df_issues["created_count"],
+            line_shape="spline",
+            name="Total created",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=df_issues.index,
+            y=df_issues["closed_count"],
+            line_shape="spline",
+            name="Total closed",
+        )
+    )
+    fig.update_traces(mode="markers+lines", hovertemplate=None)
+    fig.update_layout(xaxis_title="Date", yaxis_title="Issues", hovermode="x")
+    fig.write_html(html)
+
+
+def run():
+    parser = argparse.ArgumentParser(
+        description="Generate a burndown diagram for a GitLab repository"
+    )
+    parser.add_argument(
+        "--config", type=str, help="Path to config", default="config.json"
+    )
+    parser.add_argument("--host", type=str, help="GitLab host. Overrides config value")
+    parser.add_argument(
+        "--project-id", type=str, help="Project ID. Overrides config value"
+    )
+    parser.add_argument("--fetch", action="store_true", help="Fetch GitLab data")
+    parser.add_argument(
+        "--json",
+        type=str,
+        help="Path to a file with issues data",
+        default="issues.json",
+    )
+    parser.add_argument(
+        "--html",
+        type=str,
+        help="Path to a file with an interactive diagram",
+        default="index.html",
+    )
+    # TODO query parameters?
+    args = parser.parse_args()
+
+    if args.fetch:
+        config_raw = {}
+        if args.config != None:
+            with open(args.config, "r") as f:
+                config_raw = json.load(f)
+
+        if args.host != None:
+            config_raw.update("host", args.host)
+
+        if args.project_id != None:
+            config_raw.update("id", args.project_id)
+
+        config = Config.schema().load(config_raw)
+
+        issues_json = get_issues(config, {"scope": "all"})
+        issues = Issue.schema().load(issues_json, many=True)
+
+        with open(args.json, "w") as f:
+            f.write(Issue.schema().dumps(issues, many=True, indent=4))
+    else:
+        with open(args.json, "r") as f:
+            issues_json = json.load(f)
+            issues = Issue.schema().load(issues_json, many=True)
+
+    get_burndown_coords(issues, html=args.html)
+
 
 if __name__ == "__main__":
-    gitlab = GitLab()
-    issues = gitlab.get_issues_from_open_milestones()
-    with open('out.json', 'w') as f:
-        f.write(json.dumps(issues,indent=2))
-    # print(json.dumps(issues)
-    weights = gitlab.calculate_weights(issues)
-    create_burndown_chart(*weights)
+    run()

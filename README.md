@@ -1,28 +1,30 @@
-# burndown-chart-gitlab
-python script that generates a burndown-chart of a gitlab project
-![amount of tasks/ time](chart.png)
+# Burndown chart for GitLab
 
-amount of tasks / time
+Generate charts of issues in a GitLab repo.
 
-# How to setup
-clone the repository 
+![demo](README/demo.png)
 
-install dependencies
-```sh
-pip install -r requirments.txt
-```
+## Setup
 
-in config.json file fill in:
-```json
-{
-    "link": "gitlab_link",
-    "access_token": "gitlab_access_token",
-    "project_path": "path_to_repository",
-    "project_id": "gitlab_project_id"
-}
-```
+1. Clone the repository.
 
-run 
-```sh
-python main.py
-```
+2. Create `config.json`.
+
+    - example:
+
+        ```json
+        {
+            "host": "https://gitlab.example.com",
+            "project_id": "4"
+        }
+        ```
+
+3. Install Nix - [link](https://github.com/deemp/flakes/blob/main/README/InstallNix.md#install-nix).
+
+4. Run script.
+
+    ```console
+    nix run
+    ```
+
+5. Open the generated `index.html` in a browser.
