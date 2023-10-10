@@ -18,6 +18,7 @@ in config.json file fill in:
     "link": "gitlab_link",
     "access_token": "gitlab_access_token",
     "project_path": "path_to_repository",
+    "project_id": "gitlab_project_id"
 }
 ```
 
