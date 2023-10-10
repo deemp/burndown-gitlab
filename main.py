@@ -94,8 +94,8 @@ def create_burndown_chart(start, end, weights):
 if __name__ == "__main__":
     gitlab = GitLab()
     issues = gitlab.get_issues_from_open_milestones()
-    with open('out', 'w') as f:
-        f.write(json.dumps(issues))
+    with open('out.json', 'w') as f:
+        f.write(json.dumps(issues,indent=2))
     # print(json.dumps(issues)
     weights = gitlab.calculate_weights(issues)
     create_burndown_chart(*weights)
