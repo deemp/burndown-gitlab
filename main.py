@@ -89,11 +89,13 @@ def create_burndown_chart(start, end, weights):
     plt.setp(ax.get_xticklabels(), rotation = 15)
     ax.plot((start, end), (weights[0], 0))
     ax.plot(*weights[2], marker='o')
-    plt.show()
+    plt.savefig('output.png')
 
 if __name__ == "__main__":
     gitlab = GitLab()
     issues = gitlab.get_issues_from_open_milestones()
-    # print(json.dumps(issues))
+    with open('out', 'w') as f:
+        f.write(json.dumps(issues))
+    # print(json.dumps(issues)
     weights = gitlab.calculate_weights(issues)
     create_burndown_chart(*weights)

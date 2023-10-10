@@ -1,0 +1,1716 @@
+[
+    {
+        "id": 3090,
+        "iid": 55,
+        "project_id": 303,
+        "title": "Add: nix scripts to expose and stop server",
+        "description": "- [x] expose\n- [x] stop\n- [x] add to devshell",
+        "state": "closed",
+        "created_at": "2023-10-10T10:11:30.978Z",
+        "updated_at": "2023-10-10T10:12:40.515Z",
+        "closed_at": "2023-10-10T10:12:40.477Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [
+            {
+                "id": 478,
+                "username": "d.danko",
+                "name": "Danila Danko",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+            }
+        ],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/55",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 3,
+            "completed_count": 3
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/55",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/55/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/55/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#55",
+            "relative": "#55",
+            "full": "elibrary/elibrary#55"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3089,
+        "iid": 54,
+        "project_id": 303,
+        "title": "Add: nix script to run elibrary",
+        "description": "- [ ] add a script to packages",
+        "state": "closed",
+        "created_at": "2023-10-10T08:46:38.312Z",
+        "updated_at": "2023-10-10T08:48:05.430Z",
+        "closed_at": "2023-10-10T08:48:05.292Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [
+            {
+                "id": 478,
+                "username": "d.danko",
+                "name": "Danila Danko",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+            }
+        ],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/54",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 1,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/54",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/54/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/54/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#54",
+            "relative": "#54",
+            "full": "elibrary/elibrary#54"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3053,
+        "iid": 52,
+        "project_id": 303,
+        "title": "Add: script to run with localtunnel",
+        "description": "- [ ] Add script\n- [ ] Check with devices outside the uni network",
+        "state": "closed",
+        "created_at": "2023-10-09T17:14:23.231Z",
+        "updated_at": "2023-10-09T17:46:10.118Z",
+        "closed_at": "2023-10-09T17:46:10.100Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/52",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 2,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/52",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/52/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/52/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#52",
+            "relative": "#52",
+            "full": "elibrary/elibrary#52"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3042,
+        "iid": 51,
+        "project_id": 303,
+        "title": "Update book catalog with real data",
+        "description": "- [x] Choose books from the real catalog\n- [x] Copy the rows into books.xlsx\n- [x] Move ./elibrary/books to ./books\n- [x] Replace books in ./books with selected books\n- [x] Update ids\n- [x] Fix links",
+        "state": "closed",
+        "created_at": "2023-10-09T15:11:35.576Z",
+        "updated_at": "2023-10-09T17:20:21.829Z",
+        "closed_at": "2023-10-09T16:06:26.036Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [
+            {
+                "id": 478,
+                "username": "d.danko",
+                "name": "Danila Danko",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+            }
+        ],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 2,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/51",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 6,
+            "completed_count": 6
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/51",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/51/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/51/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#51",
+            "relative": "#51",
+            "full": "elibrary/elibrary#51"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3024,
+        "iid": 50,
+        "project_id": 303,
+        "title": "Connect to University SSO",
+        "description": "Depends on #24\n\n- [ ] Ask IT department to register our app\n- [ ] Give them a list of allowed domains for redirects",
+        "state": "opened",
+        "created_at": "2023-10-09T12:32:52.484Z",
+        "updated_at": "2023-10-09T12:32:52.484Z",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/50",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 2,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/50",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/50/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/50/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#50",
+            "relative": "#50",
+            "full": "elibrary/elibrary#50"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3023,
+        "iid": 49,
+        "project_id": 303,
+        "title": "Add: support range requests for books",
+        "description": "- [x] move books from elibrary/website/static/sample-books dir to elibrary/books\n- [x] serve the new directory\n- [x] support range requests so that pdfjs doesn't download a full pdf \n  - [docs](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions#pdfjs-is-fetching-the-entire-pdf-file-from-a-server-can-it-fetch-only-the-required-portions-for-rendering)\n  - [example](https://pdfviewer.net/extended-pdf-viewer/range-requests)",
+        "state": "closed",
+        "created_at": "2023-10-08T18:49:10.038Z",
+        "updated_at": "2023-10-09T12:23:19.583Z",
+        "closed_at": "2023-10-09T12:23:19.215Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [
+            {
+                "id": 478,
+                "username": "d.danko",
+                "name": "Danila Danko",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+            }
+        ],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/49",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 3,
+            "completed_count": 3
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/49",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/49/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/49/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#49",
+            "relative": "#49",
+            "full": "elibrary/elibrary#49"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3022,
+        "iid": 48,
+        "project_id": 303,
+        "title": "Fix: completely remove printing and downloading functionality in pdf.js",
+        "description": "Depends on https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/47\n\nRemove in ./pdfjs handlers of\n\n- [ ] printing\n- [ ] downloading (not for viewing)",
+        "state": "opened",
+        "created_at": "2023-10-08T18:32:14.205Z",
+        "updated_at": "2023-10-09T15:08:42.762Z",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/48",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 2,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/48",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/48/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/48/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#48",
+            "relative": "#48",
+            "full": "elibrary/elibrary#48"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3021,
+        "iid": 47,
+        "project_id": 303,
+        "title": "Add: disable keybindings and buttons for downloading and printing in pdfjs",
+        "description": "Depends on https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/46\n\nIn pdf.js\n\n- [x] Hide Save and Print buttons\n- [x] Prohibit Ctrl+S, Ctrl+P",
+        "state": "closed",
+        "created_at": "2023-10-08T09:29:16.837Z",
+        "updated_at": "2023-10-08T18:41:35.915Z",
+        "closed_at": "2023-10-08T18:41:35.518Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/47",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 2,
+            "completed_count": 2
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/47",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/47/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/47/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#47",
+            "relative": "#47",
+            "full": "elibrary/elibrary#47"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3020,
+        "iid": 46,
+        "project_id": 303,
+        "title": "Fix: switch from bookreader to pdf.js",
+        "description": "bookreader has some problems.\n- As I understand, it shows books as images and OCRed words. Thus, even if we have a perfectly formatted pdf, we can't show it directly.\n- It makes calls to some ancient php files which I don't want to replicate in Python. ([link](https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/9))\n\npdf.js doesn't have them.\n- It doesn't download full pdfs ([link](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions#pdfjs-is-fetching-the-entire-pdf-file-from-a-server-can-it-fetch-only-the-required-portions-for-rendering))\n- It looks modern ([example](https://mozilla.github.io/pdf.js/web/viewer.html))",
+        "state": "closed",
+        "created_at": "2023-10-07T19:49:32.431Z",
+        "updated_at": "2023-10-08T21:03:54.601Z",
+        "closed_at": "2023-10-08T10:24:05.020Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/46",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/46",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/46/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/46/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#46",
+            "relative": "#46",
+            "full": "elibrary/elibrary#46"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3019,
+        "iid": 45,
+        "project_id": 303,
+        "title": "Add: show OpenAPI 3 specification",
+        "description": "- [ ] Learn about [flask-openapi3](https://github.com/luolingchun/flask-openapi3)\n- [ ] Document server endpoints\n- [ ] Check /openapi/* endpoints work (like in [API Document](https://github.com/luolingchun/flask-openapi3#api-document))",
+        "state": "opened",
+        "created_at": "2023-10-07T13:01:03.663Z",
+        "updated_at": "2023-10-10T09:18:55.843Z",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/45",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 3,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/45",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/45/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/45/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#45",
+            "relative": "#45",
+            "full": "elibrary/elibrary#45"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3018,
+        "iid": 44,
+        "project_id": 303,
+        "title": "Add: show page text",
+        "description": "Depends on #43\n\n- [ ] Make bookreader show given text\n- [ ] Check the text is selectable\n\nLike this\n![image](/uploads/1bd0f4bda67b47ce95a714cd99b74603/image.png)\n\n[book src](https://archive.org/details/gameoflifehowtop00shin/page/8/mode/2up)",
+        "state": "closed",
+        "created_at": "2023-10-06T16:58:06.114Z",
+        "updated_at": "2023-10-08T07:57:47.643Z",
+        "closed_at": "2023-10-08T07:57:47.639Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 1,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/44",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 2,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/44",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/44/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/44/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#44",
+            "relative": "#44",
+            "full": "elibrary/elibrary#44"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3016,
+        "iid": 42,
+        "project_id": 303,
+        "title": "Add: sidebar",
+        "description": "See [demo-internetarchive.html](https://gitlab.pg.innopolis.university/elibrary/bookreader/-/blob/9aa652a861a5f5943d9586acd1eb5a49eb336748/BookReaderDemo/demo-internetarchive.html)\n\n![image](/uploads/8b14948e77ebd1987ebbf5522638ae9d/image.png)",
+        "state": "closed",
+        "created_at": "2023-10-06T11:28:54.397Z",
+        "updated_at": "2023-10-08T21:04:11.608Z",
+        "closed_at": "2023-10-08T21:04:11.604Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 1,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/42",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/42",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/42/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/42/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#42",
+            "relative": "#42",
+            "full": "elibrary/elibrary#42"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3015,
+        "iid": 41,
+        "project_id": 303,
+        "title": "Fix: show navigation in /bookreader",
+        "description": "- [x] Show progress bar",
+        "state": "closed",
+        "created_at": "2023-10-05T21:59:00.492Z",
+        "updated_at": "2023-10-06T11:26:21.367Z",
+        "closed_at": "2023-10-06T11:25:55.906Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/41",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 1,
+            "completed_count": 1
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/41",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/41/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/41/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#41",
+            "relative": "#41",
+            "full": "elibrary/elibrary#41"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3014,
+        "iid": 40,
+        "project_id": 303,
+        "title": "Fix: user not defined",
+        "description": "Fix for:\n- [ ] /view-catalog\n- [ ] /search",
+        "state": "closed",
+        "created_at": "2023-10-05T21:38:49.673Z",
+        "updated_at": "2023-10-06T09:20:00.344Z",
+        "closed_at": "2023-10-06T09:20:00.319Z",
+        "closed_by": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [
+            {
+                "id": 452,
+                "username": "k.fom",
+                "name": "Kim Fom",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+            }
+        ],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/40",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 2,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/40",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/40/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/40/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#40",
+            "relative": "#40",
+            "full": "elibrary/elibrary#40"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3013,
+        "iid": 39,
+        "project_id": 303,
+        "title": "Implement temporary login",
+        "description": "Integrate login until we integrate with IU sso",
+        "state": "closed",
+        "created_at": "2023-10-05T18:24:17.015Z",
+        "updated_at": "2023-10-05T19:21:24.183Z",
+        "closed_at": "2023-10-05T19:21:24.159Z",
+        "closed_by": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [
+            {
+                "id": 452,
+                "username": "k.fom",
+                "name": "Kim Fom",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+            }
+        ],
+        "author": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/39",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/39",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/39/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/39/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#39",
+            "relative": "#39",
+            "full": "elibrary/elibrary#39"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3012,
+        "iid": 38,
+        "project_id": 303,
+        "title": "Add: get metadata for a book page from the database",
+        "description": "Depends on #28",
+        "state": "opened",
+        "created_at": "2023-10-05T16:40:06.140Z",
+        "updated_at": "2023-10-10T09:18:56.032Z",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 1,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/38",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/38",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/38/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/38/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#38",
+            "relative": "#38",
+            "full": "elibrary/elibrary#38"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3011,
+        "iid": 37,
+        "project_id": 303,
+        "title": "Add: connect search results with book pages",
+        "description": "Depends on #28",
+        "state": "closed",
+        "created_at": "2023-10-05T16:37:21.295Z",
+        "updated_at": "2023-10-10T09:22:46.115Z",
+        "closed_at": "2023-10-10T09:22:46.111Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [
+            {
+                "id": 476,
+                "username": "i.parfenov",
+                "name": "Igor Parfenov",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/f06e83c6abcf03384567e351e29f1cad?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/i.parfenov"
+            }
+        ],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 476,
+            "username": "i.parfenov",
+            "name": "Igor Parfenov",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/f06e83c6abcf03384567e351e29f1cad?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/i.parfenov"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/37",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/37",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/37/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/37/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#37",
+            "relative": "#37",
+            "full": "elibrary/elibrary#37"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3010,
+        "iid": 36,
+        "project_id": 303,
+        "title": "Add: filters to search books",
+        "description": "Filters\n- [ ] publisher\n- [ ] year\n- [ ] author\n- [ ] title\n- [ ] isbn\n- [ ] format\n\n[filter with SQLAlchemy example](https://copyprogramming.com/howto/python-sqlalchemy-dynamic-filtering-query-in-code-example)",
+        "state": "opened",
+        "created_at": "2023-10-05T16:06:17.143Z",
+        "updated_at": "2023-10-09T12:39:13.004Z",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [],
+        "milestone": {
+            "id": 324,
+            "iid": 2,
+            "project_id": 303,
+            "title": "MVP v2",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-04T06:56:44.737Z",
+            "updated_at": "2023-10-09T15:08:17.935Z",
+            "due_date": "2023-10-15",
+            "start_date": "2023-10-10",
+            "expired": false,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/2"
+        },
+        "assignees": [],
+        "author": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/36",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 6,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/36",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/36/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/36/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#36",
+            "relative": "#36",
+            "full": "elibrary/elibrary#36"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3009,
+        "iid": 35,
+        "project_id": 303,
+        "title": "Fix: use 5-digit page numbers everywhere",
+        "description": "- [ ] Fix bookreader.js",
+        "state": "closed",
+        "created_at": "2023-10-05T15:53:25.061Z",
+        "updated_at": "2023-10-05T16:07:18.226Z",
+        "closed_at": "2023-10-05T16:07:18.207Z",
+        "closed_by": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [
+            {
+                "id": 478,
+                "username": "d.danko",
+                "name": "Danila Danko",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+            }
+        ],
+        "author": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 478,
+            "username": "d.danko",
+            "name": "Danila Danko",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/93eae4b62f4a91a47bb3dccf6c1d8963?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/d.danko"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/35",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 1,
+            "completed_count": 0
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/35",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/35/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/35/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#35",
+            "relative": "#35",
+            "full": "elibrary/elibrary#35"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 3008,
+        "iid": 34,
+        "project_id": 303,
+        "title": "Prevent SQL Inections",
+        "description": "Our sql scripts are vulnerable. I don't think this is the way we should go. I think we have 2 options to solve this\n- [ ] Either write safe sql scripts using sql parameters or\n- [x] Use an ORM e.g. SQLAlchemy",
+        "state": "closed",
+        "created_at": "2023-10-05T11:36:51.637Z",
+        "updated_at": "2023-10-05T15:05:34.006Z",
+        "closed_at": "2023-10-05T15:05:33.974Z",
+        "closed_by": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "labels": [],
+        "milestone": {
+            "id": 304,
+            "iid": 1,
+            "project_id": 303,
+            "title": "MVP v1",
+            "description": "",
+            "state": "active",
+            "created_at": "2023-10-01T18:07:20.051Z",
+            "updated_at": "2023-10-09T15:07:41.757Z",
+            "due_date": "2023-10-09",
+            "start_date": "2023-10-01",
+            "expired": true,
+            "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/milestones/1"
+        },
+        "assignees": [
+            {
+                "id": 452,
+                "username": "k.fom",
+                "name": "Kim Fom",
+                "state": "active",
+                "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+                "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+            }
+        ],
+        "author": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 452,
+            "username": "k.fom",
+            "name": "Kim Fom",
+            "state": "active",
+            "avatar_url": "https://secure.gravatar.com/avatar/9d1db3a2110d58781499a90f86745b76?s=80&d=identicon",
+            "web_url": "https://gitlab.pg.innopolis.university/k.fom"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 1,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.pg.innopolis.university/elibrary/elibrary/-/issues/34",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 2,
+            "completed_count": 1
+        },
+        "has_tasks": false,
+        "_links": {
+            "self": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/34",
+            "notes": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/34/notes",
+            "award_emoji": "https://gitlab.pg.innopolis.university/api/v4/projects/303/issues/34/award_emoji",
+            "project": "https://gitlab.pg.innopolis.university/api/v4/projects/303",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#34",
+            "relative": "#34",
+            "full": "elibrary/elibrary#34"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    }
+]
