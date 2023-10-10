@@ -18,19 +18,24 @@
           inherit (inputs.devshell.lib.${system}) mkShell mkCommands mkRunCommands;
           packages = mkShellApps {
             default = {
-              runtimeInputs = [ pkgs.python3 ];
+              runtimeInputs = [ pkgs.poetry ];
               text = ''
                 export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [
                   pkgs.stdenv.cc.cc.lib
                 ]}
-                python main.py
+                poetry run python main.py
               '';
-              description = ''convert books.xlsx to books.sql'';
+              description = ''run main'';
             };
+          };
+          devShells.default = mkShell {
+            commands = (map (x: { package = x; }) [
+              pkgs.poetry
+            ]) ++ mkCommands "scripts" [ packages.default ];
           };
         in
         {
-          inherit packages;
+          inherit packages devShells;
         };
     };
 }
